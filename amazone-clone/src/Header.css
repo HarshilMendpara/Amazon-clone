@@ -35,12 +35,12 @@
   border-bottom-right-radius: 5px;
 }
 .header_option_line_one {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   cursor: pointer;
 }
 .header_option_line_two {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -54,7 +54,7 @@
   margin-right: 10px;
 }
 .header_nav {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   justify-content: space-evenly;
 }
