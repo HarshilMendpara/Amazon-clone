@@ -17,3 +17,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLONE_9F820 }}'
           channelId: live
           projectId: clone-9f820
+          path: "../../amazone-clone"
