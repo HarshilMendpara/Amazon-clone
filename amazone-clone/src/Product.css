@@ -10,6 +10,11 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.product:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.03);
 }
 .product > img {
   max-height: 200px;
@@ -23,7 +28,10 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+  cursor: pointer;
+  padding: 4px 10px;
 }
+
 .product_rating {
   display: flex;
 }

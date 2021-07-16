@@ -65,3 +65,20 @@
   margin-right: 10px;
   color: white;
 }
+.basket_icon {
+  animation: example 0.8s infinite;
+}
+@keyframes example {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,7 +1,7 @@
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(234, 237, 237);
   height: max-content;
 }
 .checkout_ad {
