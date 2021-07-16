@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "./amazone-clone/build",
     "ignore": [
       "firebase.json",
       "**/.*",
