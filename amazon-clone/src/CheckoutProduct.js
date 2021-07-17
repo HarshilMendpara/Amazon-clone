@@ -21,7 +21,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                 <p className='checkout_product_title'>{title}</p>
 
                 <p className='checkout_product_price'>
-                    <small>$</small>
+                    <small>₹</small>
                     <strong>{price}</strong>
                 </p>
 
