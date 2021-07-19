@@ -1,22 +1,28 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
+import { useHistory } from 'react-router-dom';
 import './Product.css';
 import { useStateValue } from './StateProvider';
 
 function Product({ id, title, image, price, rating }) {
-    const [state, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+    const history = useHistory();
 
     const addToBasket = () => {
-        dispatch({
-            type: 'ADD_TO_BASKET',
-            item: {
-                id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating,
-            }
-        })
+        if (user) {
+            dispatch({
+                type: 'ADD_TO_BASKET',
+                item: {
+                    id: id,
+                    title: title,
+                    image: image,
+                    price: price,
+                    rating: rating,
+                }
+            })
+        } else {
+            history.push('/login');
+        }
     }
 
     return (
