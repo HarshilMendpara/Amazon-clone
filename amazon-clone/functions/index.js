@@ -1,7 +1,8 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")(functions.config().stripe.key);
+require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 
@@ -29,5 +30,3 @@ app.post("/payment/create", async (request, response) => {
 });
 
 exports.api = functions.https.onRequest(app);
-
-// http://localhost:5001/clone-9f820/us-central1/api
